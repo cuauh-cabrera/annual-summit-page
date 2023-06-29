@@ -1,0 +1,6 @@
+.top-menu {
+    display: none;
+    @include mobile-sm {
+        display: block;
+    }
+}

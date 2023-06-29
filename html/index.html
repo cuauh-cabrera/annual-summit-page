@@ -1,37 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Home - Annual Summit</title>
 </head>
+
 <body>
+    <!--Top menu-->
     <div class="top-menu">
         <ul>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="../assets/facebook_icon.svg" alt=""></a></li>
+            <li><a href=""><img src="../assets/twitter_icon.svg" alt=""></a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">My Page</a></li>
+            <li><a href="#">Logout</a></li>
         </ul>
     </div>
-    <div class="div hero-contanier">
+    <div class="headline-contanier">
         <header class="header">
-            <nav class="header__nav">
+            <div class="top-bar">
+                <div class="icon-menu" id="icon-menu">
+                    <div class="icon-menu__bar"></div>
+                </div>
+            </div>
+            <!--Navbar-->
+            <nav class="navbar">
                 <ul>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="#">Program</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Sponsor</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">CC Campaign</a></li>
+                    <li><a href="#">Campaign</a></li>
                 </ul>
             </nav>
-            <section class="hero"></section>
-            
         </header>
-
+        <div class="hero-container">
+            <!--Hero section-->
+            <section class="hero">
+                <h1 class="hero__title">BRICS ANNUAL SUMMIT<br>2024</h1>
+                <p class="hero__header">"Toward the consolidation of a more just, peaceful, multipolar world with
+                    economic
+                    development and well-being for all the nations."</p>
+                <h2 class="hero__date">2024.10.15(TU)≈17(THU)</h2>
+                <p class="hero__site">@Rio de Janeiro, Brazil</p>
+            </section>
+        </div>
     </div>
+    <main>
+        <!--Program-->
+        <section class="program">
+            <h2 class="program__title">Main Program</h2>
+            <hr class="program__indicator">
+            <div class="program__card--container">
+                <!--Lecture  Card-->
+                <article class="program__card">
+                    <figure class="program__card--icon">
+                        <img src="../assets/lecture-icon.png" alt="">
+                    </figure>
+                    <h3 class="program__card--title">Lecture</h3>
+                    <p class="program__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, fugiat!</p>
+                </article>
+                <!--Exhibition Card-->
+                <article class="program__card">
+                    <figure class="program__card--icon">
+                        <img src="../assets/exhibition-icon.png" alt="">
+                    </figure>
+                    <h3 class="program__card--title">Exhibition</h3>
+                    <p class="program__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, fugiat!</p>
+                </article>
+                <!--Forum Card-->
+                <article class="program__card">
+                    <figure class="program__card--icon">
+                        <img src="../assets/forum-icon.png" alt="">
+                    </figure>
+                    <h3 class="program__card--title">Forum</h3>
+                    <p class="program__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, fugiat!</p>
+                </article>
+                <!--Workshop Card-->
+                <article class="program__card">
+                    <figure class="program__card--icon">
+                        <img src="../assets/workshop-icon.png" alt="">
+                    </figure>
+                    <h3 class="program__card--title">Workshop</h3>
+                    <p class="program__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, fugiat!</p>
+                </article>
+                <!--Networking Card-->
+                <article class="program__card">
+                    <figure class="program__card--icon">
+                        <img src="../assets/ignite-icon.png" alt="">
+                    </figure>
+                    <h3 class="program__card--title">Networking</h3>
+                    <p class="program__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, fugiat!</p>
+                </article>
+                <button class="program__card--container-link">SEE THE WHOLE PROGRAM</button>
+            </div>
+        </section>
+        <!--Speakers-->
+        <section class="speakers">
+            <h3 class="speakers__title">Featured Speakers</h3>
+            <hr class="speakers__indicator">
+            <div class="speakers__card--container">
+                <!--Speaker 1-->
+                <article class="speakers__card">
+                    <figure class="speakers__card-img">
+                        <img src="../assets/lula_da_silva_375px.jpg" alt="">
+                        <figcaption>
+                            <small>Luiz Inacio Lula da Silva</small>
+                        </figcaption>
+                    </figure>
+                    <div class="speakers__info">
+                        <h3 class="speakers__card--name">Luiz Inacio Lula da Silva</h3>
+                        <h4 class="speakers__card--role">President of Brazil</h4>
+                        <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, voluptas?</p>
+                    </div>
+                </article>
+                <!--Speaker 2-->
+                <article class="speakers__card">
+                    <figure class="speakers__card-img">
+                        <img src="../assets/putin_372px.jpg" alt="">
+                        <figcaption>
+                            <small>Vladimir Putin</small>
+                        </figcaption>
+                    </figure>
+                    <div class="speakers__info">
+                        <h3 class="speakers__card--name">Vladimir Putin</h3>
+                        <h4 class="speakers__card--role">President of the Russian Federation</h4>
+                        <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, voluptas?</p>
+                    </div>
+                </article>
+                <!--Speaker 3-->
+                <article class="speakers__card">
+                    <figure class="speakers__card-img">
+                        <img src="../assets/modi.png" alt="">
+                        <figcaption>
+                            <small>Narendra Modi</small>
+                        </figcaption>
+                    </figure>
+                    <div class="speakers__info">
+                        <h3 class="speakers__card--name">Narendra Modi</h3>
+                        <h4 class="speakers__card--role">Prime Minister of India</h4>
+                        <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, voluptas?</p>
+                    </div>
+                </article>
+                <!--Speaker 4-->
+                <article class="speakers__card">
+                    <figure class="speakers__card-img">
+                        <img src="../assets/xi_jinping_342px.jpg" alt="">
+                        <figcaption>
+                            <small>Xi Jinping</small>
+                        </figcaption>
+                    </figure>
+                    <div class="speakers__info">
+                        <h3 class="speakers__card--name">Xi Jinping</h3>
+                        <h4 class="speakers__card--role">President of The People's Republic of China</h4>
+                        <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, voluptas?</p>
+                    </div>
+                </article>
+                <!--Speaker 5-->
+                <article class="speakers__card">
+                    <figure class="speakers__card-img">
+                        <img src="../assets/ramaphosa_354px.jpg" alt="">
+                        <figcaption>
+                            <small>Cyril Ramaphosa</small>
+                        </figcaption>
+                    </figure>
+                    <div class="speakers__info">
+                        <h3 class="speakers__card--name">Cyril Ramaphosa</h3>
+                        <h4 class="speakers__card--role">President of South Africa</h4>
+                        <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, voluptas?</p>
+                    </div>
+                </article>
+                <!--Speaker 6-->
+                <article class="speakers__card">
+                    <figure class="speakers__card-img">
+                        <img src="../assets/dilma_378px.png" alt="">
+                        <figcaption>
+                            <small>Dilma Rousseff</small>
+                        </figcaption>
+                    </figure>
+                    <div class="speakers__info">
+                        <h3 class="speakers__card--name">Dilma Rousseff</h3>
+                        <h4 class="speakers__card--role">Chair of the New Development Bank</h4>
+                        <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, voluptas?</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--Partners-->
+        <section class="partners">
+            <h3 class="partners__title">Partners</h3>
+            <hr class="partners__underline">
+            <div class="partners__container">
+                <ul>
+                    <li><a href="#"><img src="../assets/Flag_of_Brazil.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/Flag_of_Russia.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/Flag_of_India.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/Flag_of_China.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/Flag_of_South_Africa.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/New_development_bank_logo.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer class="footer">
+            <figure class="footer__logo">
+                <img src="../assets/brics_logo.svg" alt="brics logo">
+                <figcaption>
+                    <p>BRICS</p>
+                </figcaption>
+            </figure>
+            <h4 class="footer__license">© 2024 BRICS and The new Development Bank. Some Rights Reserved</h4>
+        </footer>
+    </main>
 </body>
+
 </html>

@@ -1,0 +1,45 @@
+/// Layout mixins
+@mixin flexbox ($direction:row, $wrap:nowrap, $justify:center, $align: center) {
+    display: flex;
+    flex-wrap:$wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/// Media queries
+@mixin mobile-sm {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mobile-lg {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop-sm {
+    @media(min-width: 768px) {
+        @content;
+    } 
+}
+
+@mixin desktop-md {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop-lg {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin desktop-xl {
+    @media (min-width: 1400px) {
+        @content;
+    }
+}

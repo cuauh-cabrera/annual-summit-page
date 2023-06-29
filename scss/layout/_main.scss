@@ -1,0 +1,213 @@
+/// Program section
+.program {
+    width: 100%;
+    margin-top: 0px;
+    @include flexbox (column, nowrap, space-around, center);
+    background-image: url(../../assets/main-background-icon.PNG);
+
+    &__title {
+        width: 90%;
+        margin-top: 10px;
+        text-align: center;
+        color: $text-white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+
+    &__indicator {
+        border: solid $line-color 2px;
+        width: 10%;
+        margin-top: 5px;
+    }
+
+
+    &__card--container {
+        width: 95%;
+        margin-top: 10px;
+        @include flexbox (column, nowrap, space-around, start);
+    }
+
+    &__card {
+        border: none;
+        background-color: rgba($bg-white, 0.15);
+        width: 100%;
+        margin-top: 5px;
+        @include flexbox (row, nowrap, space-between, center)
+    }
+
+    &__card--icon {
+        margin-left: 5px;
+    }
+
+    &__card--title {
+        color: $title-orange;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9rem;
+        text-align: start;
+    }
+
+    &__card--text {
+        width: 55%;
+        color: $text-white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        text-align: start;
+    }
+
+    &__card--container-link {
+        background-color: $bg-orange;
+        border: none;
+        width: 70%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 55px;
+        color: $text-white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    &__card--container-link:hover {
+        background-color: $bg-white;
+        color: $title-orange;
+    }
+
+}
+
+/// Speakers section
+.speakers {
+    background-color: $bg-white;
+    width: 100%;
+    @include flexbox (column, nowrap, space-around, center);
+
+    &__title {
+        margin-top: 15px;
+        color: $text-black;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    &__indicator {
+        border: solid $title-orange 1px;
+        width: 15%;
+        margin-top: 5px;
+    }
+
+    &__card--container {
+        width: 95%;
+        margin-top: 20px;
+        @include flexbox (column, nowrap, space-around, center);
+    }
+
+    &__card {
+        margin-top: 50px;
+        @include flexbox (row, nowrap, space-around, center);
+    }
+
+    &__card-img {
+        width: 30%;
+        aspect-ratio: 1/1;
+    }
+
+    &__card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__card-img figcaption {
+        display: none;
+    }
+
+    &__info {
+        width: 80%;
+        margin-left: 10px;
+        @include flexbox (column, nowrap, space-around, start);
+    }
+
+    &__card--name {
+        width: 100%;
+        color: $text-black;
+        font-style: normal;
+        font-weight: 700;
+        text-align: start;
+        font-size: 1.2rem;
+    }
+
+    &__card--role {
+        width: 100%;
+        margin-top: 5px;
+        color: $title-orange;
+        font-style: normal;
+        font-weight: 400;
+        text-align: start;
+        font-size: 0.85rem;
+    }
+
+    &__card--text {
+        width: 100%;
+        margin-top: 10px;
+        color: $text-black;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-align: start;
+    }
+}
+
+/// Partner's section
+.partners {
+    background-color: $bg-grey;
+    width: 100%;
+    margin-top: 20px;
+    @include flexbox (column, nowrap, space-around, center);
+
+    &__title {
+        width: 50%;
+        margin-top: 15px;
+        text-align: center;
+        color: $text-white;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    &__underline {
+        border: solid $line-color 1px;
+        width: 10%;
+        margin-top: 15px;
+    }
+
+    &__container {
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        @include flexbox (column,wrap,space-between,center);
+    }
+
+    &__container ul {
+        width: 100%;
+        @include flexbox (row,wrap,space-between,center);
+    }
+
+    &__container ul li {
+        width: 30%;
+        aspect-ratio: 1/1;
+    }
+
+    &__container ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        filter: grayscale(99%);
+    }
+}
