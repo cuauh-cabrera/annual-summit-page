@@ -1,15 +1,11 @@
 @import './utils/variables';
 @import './utils/mixins';
-
 @import './base/reset';
 @import './base/typography';
-
 @import './layout/topmenu';
 @import './layout/_headline';
 @import './layout/navigation';
 @import './layout/content';
 @import './layout/footer';
-
 @import './components/buttons';
 @import './components/dropdown';
-

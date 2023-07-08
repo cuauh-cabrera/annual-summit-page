@@ -1,6 +1,7 @@
 .top-menu {
-    display: none;
-    @include mobile-sm {
-        display: flex;
-    }
+  display: none;
+
+  @include mobile-sm {
+    display: flex;
+  }
 }

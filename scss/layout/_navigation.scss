@@ -1,44 +1,46 @@
 .top-bar {
-    width: 100%;
+  width: 100%;
 }
 
 .icon-menu {
-    @include flexbox (row, nowrap, center, center);
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  @include flexbox (row, nowrap, center, center);
 
-    &__bar {
-        width: 30px;
-        height: 4px;
-        background: $bg-grey;
-        border-radius: 8px;
-        position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 
-        &:after,
-        &:before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 30px;
-            height: 4px;
-            border-radius: 8px;
-            background: $bg-grey;
-            top: -.5em;
-        }
+  &__bar {
+    width: 30px;
+    height: 4px;
+    background: $bg-grey;
+    border-radius: 8px;
+    position: relative;
 
-        &:after {
-            top: .5em;
-        }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 4px;
+      border-radius: 8px;
+      background: $bg-grey;
+      top: -0.5em;
     }
+
+    &::after {
+      top: 0.5em;
+    }
+  }
 }
 
 .navbar {
-    width: 100%;
-    height: auto;
-    @include flexbox (column, nowrap, space-around, start);
+  width: 100%;
+  height: auto;
 
-    &__menu {
-        display: none;
-    }
+  @include flexbox (column, nowrap, space-around, start);
+
+  &__menu {
+    display: none;
+  }
 }

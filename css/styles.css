@@ -142,7 +142,7 @@ ol a {
   border-radius: 8px;
   position: relative;
 }
-.icon-menu__bar:after, .icon-menu__bar:before {
+.icon-menu__bar::after, .icon-menu__bar::before {
   content: "";
   position: absolute;
   display: block;
@@ -152,7 +152,7 @@ ol a {
   background: rgb(65, 66, 70);
   top: -0.5em;
 }
-.icon-menu__bar:after {
+.icon-menu__bar::after {
   top: 0.5em;
 }
 
@@ -171,7 +171,7 @@ ol a {
 
 .program {
   width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -203,7 +203,7 @@ ol a {
   align-items: start;
 }
 .program__card {
-  border: solid white 0px;
+  border: solid white 0;
   background-color: rgba(248, 248, 248, 0.15);
   width: 100%;
   margin-top: 5px;
@@ -447,7 +447,7 @@ ol a {
   flex-direction: row;
   justify-content: center;
   align-items: text-align;
-  gap: 0px;
+  gap: 0;
   cursor: pointer;
 }
 .dropdown:hover {

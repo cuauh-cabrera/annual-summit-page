@@ -1,70 +1,74 @@
 .headline-contanier {
-    width: 100%;
-    height: fit-content;
-    background-image: url(../../assets/hero_bkg_mobile.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include flexbox (column,nowrap,space-around,center);
+  width: 100%;
+  height: fit-content;
+  background-image: url(../../assets/hero_bkg_mobile.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include flexbox (column,nowrap,space-around,center);
 }
 
 .header {
-    width: 100%;
-    background-color: $bg-transparent;
-    display: flex;
-    @include flexbox (column, nowrap, space-around,center);
+  width: 100%;
+  background-color: $bg-transparent;
+  display: flex;
+
+  @include flexbox (column, nowrap, space-around,center);
 }
 
 .hero-container {
-    width: 100%;
-    height: max-content;
-    margin-top: 5px;
-    @include flexbox (column,nowrap,center);
+  width: 100%;
+  height: max-content;
+  margin-top: 5px;
+
+  @include flexbox (column,nowrap,center);
 }
 
 .hero {
-    width: 100%;
-    @include flexbox (column, nowrap,space-around,center);
+  width: 100%;
 
-    &__title {
-        width: 95%;
-        margin-top: 25px;
-        text-align: start;
-        color: $title-orange;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.8rem;
-    }
+  @include flexbox (column, nowrap,space-around,center);
 
-    &__header {
-        border: solid rgba(255, 255, 255, 1) 5px;
-        width: 95%;
-        margin-top: 25px;
-        padding: 6px;
-        text-align:start;
-        color: $text-grey;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.92rem;
-    }
+  &__title {
+    width: 95%;
+    margin-top: 25px;
+    text-align: start;
+    color: $title-orange;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
 
-    &__date {
-        width: 95%;
-        margin-top: 30px;
-        color: $title-grey;
-        font-style: normal;
-        font-size: 1.70rem;
-        font-weight: 700;
-        text-align: start;
-    }
+  &__header {
+    border: solid rgba(255, 255, 255, 1) 5px;
+    width: 95%;
+    margin-top: 25px;
+    padding: 6px;
+    text-align: start;
+    color: $text-grey;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.92rem;
+  }
 
-    &__site {
-        width: 95%;
-        margin-top: 3px;
-        margin-bottom: 50px;
-        color: $text-grey;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-    }
+  &__date {
+    width: 95%;
+    margin-top: 30px;
+    color: $title-grey;
+    font-style: normal;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: start;
+  }
+
+  &__site {
+    width: 95%;
+    margin-top: 3px;
+    margin-bottom: 50px;
+    color: $text-grey;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+  }
 }
