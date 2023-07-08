@@ -29,13 +29,13 @@
             </div>
             <!--Navbar-->
             <nav class="navbar">
-                <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#">Program</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Sponsor</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Campaign</a></li>
+                <ul class="navbar__menu" id="main-menu">
+                    <li class="navbar__menu--item"><a href="./about.html" class="navbar__menu--link">About</a></li>
+                    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Program</a></li>
+                    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Join</a></li>
+                    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Sponsor</a></li>
+                    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">News</a></li>
+                    <li class="navbar__menu--item"><a href="#" class="navbar__menu--cc">Campaign</a></li>
                 </ul>
             </nav>
         </header>
@@ -135,7 +135,7 @@
                     </figure>
                     <div class="speakers__info">
                         <h3 class="speakers__card--name">Vladimir Putin</h3>
-                        <h4 class="speakers__card--role">President of the Russian Federation</h4>
+                        <h4 class="speakers__card--role">President of The Russian Federation</h4>
                         <p class="speakers__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Nesciunt, voluptas?</p>
                     </div>
@@ -202,6 +202,13 @@
                 </article>
             </div>
         </section>
+        <!--Dropdown-->
+        <div class="drop-container">
+            <div class="dropdown">
+                <h3 class="dropdown__text">MORE</h3>
+                <img src="../assets/arrow_down 1.svg" alt="" class="dropdown__img">
+            </div>
+        </div>
         <!--Partners-->
         <section class="partners">
             <h3 class="partners__title">Partners</h3>
@@ -225,9 +232,10 @@
                     <p>BRICS</p>
                 </figcaption>
             </figure>
-            <h4 class="footer__license">© 2024 BRICS and The new Development Bank. Some Rights Reserved</h4>
+            <h4 class="footer__license">© 2024 BRICS and The New Development Bank. Some Rights Reserved</h4>
         </footer>
     </main>
+    <script src="../main.js"></script>
 </body>
 
 </html>

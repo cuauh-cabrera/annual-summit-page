@@ -1,17 +1,44 @@
+.top-bar {
+    width: 100%;
+}
+
 .icon-menu {
-    width: fit-content;
+    @include flexbox (row, nowrap, center, center);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 
     &__bar {
-        border: solid $text-grey 3px;
-        width: 100%;
-        height: 5px;
-        margin-right: 20px;
-        margin-left: 10px;
+        width: 30px;
+        height: 4px;
+        background: $bg-grey;
+        border-radius: 8px;
+        position: relative;
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 4px;
+            border-radius: 8px;
+            background: $bg-grey;
+            top: -.5em;
+        }
+
+        &:after {
+            top: .5em;
+        }
     }
 }
 
 .navbar {
-    visibility: hidden;
-    display: flex;
-    @include flexbox (row, nowrap, space-around,start);
+    width: 100%;
+    height: auto;
+    @include flexbox (column, nowrap, space-around, start);
+
+    &__menu {
+        display: none;
+    }
 }

@@ -34,17 +34,22 @@ ol a {
 }
 @media (min-width: 480px) {
   .top-menu {
-    display: block;
+    display: flex;
   }
 }
 
 .headline-contanier {
   width: 100%;
-  height: 60vh;
+  height: fit-content;
   background-image: url(../../assets/hero_bkg_mobile.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header {
@@ -53,8 +58,8 @@ ol a {
   display: flex;
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -89,7 +94,7 @@ ol a {
 .hero__header {
   border: solid rgb(255, 255, 255) 5px;
   width: 95%;
-  margin-top: 30px;
+  margin-top: 25px;
   padding: 6px;
   text-align: start;
   color: rgb(143, 143, 145);
@@ -109,31 +114,59 @@ ol a {
 .hero__site {
   width: 95%;
   margin-top: 3px;
+  margin-bottom: 50px;
   color: rgb(143, 143, 145);
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
 }
 
-.icon-menu {
-  width: fit-content;
-}
-.icon-menu__bar {
-  border: solid rgb(143, 143, 145) 3px;
+.top-bar {
   width: 100%;
-  height: 5px;
-  margin-right: 20px;
-  margin-left: 10px;
 }
 
-.navbar {
-  visibility: hidden;
-  display: flex;
+.icon-menu {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.icon-menu__bar {
+  width: 30px;
+  height: 4px;
+  background: rgb(65, 66, 70);
+  border-radius: 8px;
+  position: relative;
+}
+.icon-menu__bar:after, .icon-menu__bar:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 8px;
+  background: rgb(65, 66, 70);
+  top: -0.5em;
+}
+.icon-menu__bar:after {
+  top: 0.5em;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: space-around;
   align-items: start;
+}
+.navbar__menu {
+  display: none;
 }
 
 .program {
@@ -148,7 +181,7 @@ ol a {
 }
 .program__title {
   width: 90%;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-style: normal;
@@ -170,7 +203,7 @@ ol a {
   align-items: start;
 }
 .program__card {
-  border: none;
+  border: solid white 0px;
   background-color: rgba(248, 248, 248, 0.15);
   width: 100%;
   margin-top: 5px;
@@ -305,6 +338,7 @@ ol a {
 }
 
 .partners {
+  display: none !important;
   background-color: rgb(65, 66, 70);
   width: 100%;
   margin-top: 20px;
@@ -359,6 +393,7 @@ ol a {
 }
 
 .footer {
+  display: none !important;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -389,6 +424,45 @@ ol a {
   font-weight: 400;
   text-align: start;
   font-size: 0.79rem;
+}
+
+.drop-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: text-align;
+}
+
+.dropdown {
+  width: 95%;
+  padding: 10px;
+  border: solid 1px rgb(220, 220, 220);
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: text-align;
+  gap: 0px;
+  cursor: pointer;
+}
+.dropdown:hover {
+  box-shadow: 3px 3px 5px rgb(220, 220, 220);
+}
+.dropdown__text {
+  width: 30%;
+  padding: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+.dropdown__img {
+  width: 4%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 .top-menu {
     display: none;
     @include mobile-sm {
-        display: block;
+        display: flex;
     }
 }

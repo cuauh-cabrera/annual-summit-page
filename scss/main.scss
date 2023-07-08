@@ -4,13 +4,12 @@
 @import './base/reset';
 @import './base/typography';
 
-@import './layout/topbar';
+@import './layout/topmenu';
 @import './layout/_headline';
 @import './layout/navigation';
-@import './layout/main';
+@import './layout/content';
 @import './layout/footer';
 
 @import './components/buttons';
-@import './components/cards';
 @import './components/dropdown';
 
